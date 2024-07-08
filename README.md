@@ -1,7 +1,5 @@
 # KnowledgeHub
 
-# KnowledgeHub
-
 KnowledgeHub is an innovative and interactive platform designed to facilitate knowledge sharing through articles, comments, and user interactions. It aims to create a vibrant community where users can learn from each other by sharing insights, experiences, and expertise. The platform empowers users to create and share articles on various topics, engage in meaningful discussions through comments, and follow their favorite authors to stay updated with their latest posts.
 
 ## Table of Contents
