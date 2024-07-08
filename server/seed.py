@@ -23,8 +23,8 @@ if __name__ == '__main__':
         User.query.delete()
         Article.query.delete()
 
-        db.session.add(User(name=fake.name(), email=fake.email(), join_date=datetime.datetime(2024, 7, 8, 11, 30)))
-        db.session.add(User(name=fake.name(), email=fake.email(), join_date=datetime.datetime(2024, 7, 9, 12, 30)))
+        db.session.add(User(name=fake.name(), email=fake.email(), join_date=datetime.datetime(2024, 7, 8, 11, 30), password = bcrypt.generate_password_hash("1234")))
+        db.session.add(User(name=fake.name(), email=fake.email(), join_date=datetime.datetime(2024, 7, 9, 12, 30), password = bcrypt.generate_password_hash("4567")))
         # db.session.add_all(self)
         
         #Create and add Articles
