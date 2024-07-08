@@ -31,6 +31,13 @@ class User(db.Model, SerializerMixin):
         self.join_date = join_date
         self.prof_pic = prof_pic
 
+    def set_password(self, password):
+        self.password = bcrypt.generate_password_hash(password).decode('utf-8')
+
+    def check_password(self, password):
+        return bcrypt.check_password_hash(self.password, password)
+        
+
 
     def __repr__(self):
         return f"<User {self.id}, {self.name}, {self.email}, {self.password}>"
